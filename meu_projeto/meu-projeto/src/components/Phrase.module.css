@@ -1,0 +1,25 @@
+.phraseContainer {
+    background: #333;
+    border: 1px solid #111;
+    color: #fff;
+    padding: 1em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.phraseContainer:hover {
+    background: #111;
+    transform: scale(1.1);
+}
+
+.phraseContent {
+    color:#fff;
+    background: #333;
+    margin-top: 1em;
+    border-radius: 2em;
+    padding: 1em;
+    cursor: pointer;
+}
+.phraseContent:hover {
+    background: rgb(20, 43, 20);
+    transform: translateX(1.2em);
+}
