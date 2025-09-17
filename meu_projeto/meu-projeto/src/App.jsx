@@ -1,9 +1,8 @@
 import "./App.css";
-import HelloWorld from "./components/HelloWorld";
-import Pessoa from "./components/Pessoa";
-import Frase from "./components/Frase";
-import Button from "./components/Button";
-import Lista from "./components/List";
+import Evento from "./components/Evento";
+import Form from "./components/Form";
+
+
 
 function App() {
   const url =
@@ -11,14 +10,14 @@ function App() {
 
   return (
     <>
-      <HelloWorld />
+      <h1>Testando Eventos</h1>
       <img src={url} />
 
-      <Pessoa nome="kawe" idade="20" sexo="M" profissao="Programador" />
-      <Frase nome="kawe" />
-      <Button />
+    <Evento numero = "1"/>
+    <Evento numero = "2"/>
 
-      <Lista/>
+    <Form />
+
     </>
   );
 }
