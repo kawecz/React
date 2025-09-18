@@ -1,4 +1,28 @@
 input[type="text"] {
-    padding: 2em;
-    color: #000;
+  border-radius: 2em;
+  border: 1px solid #000;
+  outline: transparent;
+  padding: 2em;
+  color: #000;
+  margin-top: 2em;
+}
+input[type="text"]:focus {
+  box-shadow: 5px 5px 30px blue;
+  transition: ease-in-out 1.2s;
+}
+input[type="password"] {
+  border-radius: 2em;
+  border: 1px solid #000;
+  outline: transparent;
+  margin-top: 1em;
+  padding: 2em;
+  color: #000;
+}
+input[type="password"]:focus {
+  box-shadow: 5px 5px 30px blue;
+  transition: ease-in-out 1.2s;
+}
+
+div {
+  margin-top: 2em;
 }
