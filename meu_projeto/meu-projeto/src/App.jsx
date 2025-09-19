@@ -14,9 +14,9 @@ function App() {
       <img src={url} />
 
     <Evento numero = "1"/>
-    <Evento numero = "2"/>
 
     <Form />
+
 
     </>
   );

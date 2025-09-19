@@ -4,11 +4,16 @@ import { useState } from "react";
 function Form() {
   function cadastrarUsuario(e) {
     e.preventDefault();
-    console.log(`Usuário: ${name} foi cadastrado com a senha ${senha}`)
-  }
+    console.log(`Usuário: ${name} foi cadastrado com a senha ${senha}`);
+    setEnviar(true); 
+    
+}
 
-  const [name,setName] = useState()
-  const [senha,setSenha] = useState()
+  const [name, setName] = useState();
+  const [senha, setSenha] = useState();
+  const [enviar, setEnviar] = useState(false);
+
+
 
   return (
     <>
@@ -21,9 +26,8 @@ function Form() {
             id="name"
             name="name"
             placeholder="Digite o seu nome"
-            onChange={(e)=> setName(e.target.value)} 
+            onChange={(e) => setName(e.target.value)}
             className={styles.input}
-            
           />
         </div>
 
@@ -34,13 +38,18 @@ function Form() {
             id="password"
             name="password"
             placeholder="Senha"
-            onChange={(e)=> setSenha(e.target.value)}
+            onChange={(e) => setSenha(e.target.value)}
             required
             min={1}
             className={styles.input}
           />
         </div>
-        <input type="submit" value="Cadastrar" />
+        <input 
+        type="submit" 
+        value="Cadastrar"  
+        className={`${enviar ? styles.active : ''}`}
+
+        />
       </form>
     </>
   );

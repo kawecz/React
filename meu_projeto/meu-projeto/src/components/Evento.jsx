@@ -1,19 +1,22 @@
+import Button from "./evento/Button";
 
-import styles from './Button.module.css'
+function Evento() {
+  const meuEvento = () => {
+    console.log(`Ativando primeiro evento`);
+  };
 
-function Evento({numero}) {
+  function segundoEvento() {
+    console.log("ativando o segundo evento");
+  }
 
-    const meuEvento = () =>{
-        alert(`Opa, fui ativado ${numero}`)
-        console.log(`Opa, fui ativado ${numero}`)
-    }
+  return (
+    <>
+      <p>Clique para disparar um evento:</p>
 
-    return (
-        <>
-            <p>Clique para disparar um evento:</p>
-            <button onClick={meuEvento} className={styles.button} >Ativar!</button>
-        </>
-    )
+      <Button event={meuEvento} text="Primeiro evento" />
+      <Button event={segundoEvento} text="Segundo evento" />
+    </>
+  );
 }
 
-export default Evento
+export default Evento;

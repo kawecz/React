@@ -26,3 +26,7 @@ input[type="password"]:focus {
 div {
   margin-top: 2em;
 }
+
+.active {
+  background: rgb(94, 192, 94);
+}

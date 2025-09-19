@@ -2,11 +2,20 @@
     padding: 1em;
     cursor: pointer;
     border: transparent;
+    margin: 1em;
 }
 .button:hover {
     transition: ease-in-out 2s;
     transform: scale(1.2);
     background: rgb(169, 116, 204);
     color: #000;
+}
+
+.active {
+    background: blue;
+}
+
+.act {
+    background: green;
 }
 
