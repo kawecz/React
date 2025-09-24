@@ -1,13 +1,17 @@
+import { useState } from "react";
+import SeuNome from "./components/SeuNome";
+import Saudacao from "./components/Saudacao";
+
 import "./App.css";
-import Lista from "./components/Lista";
+
 function App() {
-  const meusItens = ["React", "Vue", "Angular"];
+  const [nome, setNome] = useState();
 
   return (
     <>
-      <h1>Redenrização de Listas</h1>
-      <Lista itens={meusItens}/>
-      <Lista itens={[]}/>
+      <h1>State lift</h1>
+      <SeuNome setNome={setNome} />
+      <Saudacao nome = {nome}/>
     </>
   );
 }
