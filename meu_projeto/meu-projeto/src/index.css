@@ -2,6 +2,8 @@
   background: #fff;
   transition: all 2.2s;
   color: #000;
+  list-style: none;
+
 }
 
 :root {
